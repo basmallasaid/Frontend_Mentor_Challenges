@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main{
+    background-color: hsl(0, 0%, 100%);
+    height: auto;
+    width: 650px;
+    padding: 25px;
+    border-radius: 16px;
+    margin:80px 0px;
+}
+#recipe{
+    width: 100%;
+    height: 262px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.description{
+    color:hsl(30, 10%, 34%)
+}
+.text{
+   width: 93% ;
+   background-color:hsl(330, 100%, 98%) ;
+   padding:20px;
+   border-radius: 10px;
+}
+.text p{
+    font-weight: 800;
+    color:hsl(332, 51%, 32%);
+}
+ul{
+    margin: 15px;
+    line-height: 30px;
+    color: hsl(30, 10%, 34%);
+}
+ul li , ol li{
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.text ul li::marker{
+    color:hsl(332, 51%, 32%);
+}
+.section h2{
+    color: hsl(14, 45%, 36%);
+   
+}
+.section ul li::marker , .section ol li::marker{
+    color: hsl(14, 45%, 36%);
+}
+hr{
+    border: none; 
+    height: 1px;  
+    background-color:hsl(30, 18%, 87%);
+}
+ol{
+    margin: 15px;
+    line-height: 25px;
+    color:hsl(30, 10%, 34%)
+}
+ol li::marker{
+    font-weight: bold;
+}
+ol li{
+    margin-bottom: 15px;
+}
+td{
+    padding: 10px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+tr:last-child td {
+    border-bottom: none;
+  }  
+table{
+    width: 100%;
+    color: hsl(30, 10%, 34%);
+}
+.info{
+    color:hsl(14, 45%, 36%);
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        width: 300px;
+        border-radius: 0px;
+        padding: 0px;
+        font-size:13px;
+
+    }
+    #recipe{
+        width: 100%;
+        height: 262px;
+        border-radius: 0px;
+        margin-bottom: 20px;
+    }
+    .content{
+        padding: 20px;
+    }
+    .text{
+        width: 80%;
+    }
+}
